@@ -26,7 +26,7 @@ cd social-media-buying-behavior
   
 2. **Install dependencies**
 
-It is recommended to use a virtual environment:
+   It is recommended to use a virtual environment:
 
 ```bash
 python -m venv venv
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 3. **Download the dataset**
 
-Download the dataset from Kaggle and place the file `social_ads.csv` into the `data/` folder:
+   Download the dataset from Kaggle and place the file `social_ads.csv` into the `data/` folder:
 
 👉 [Social Advertisement Dataset on Kaggle](https://www.kaggle.com/datasets/sakshisatre/social-advertisement-dataset/data)
 
@@ -48,18 +48,22 @@ Download the dataset from Kaggle and place the file `social_ads.csv` into the `d
 ```bash
 python main.py
 ```
-This will execute the ETL process and generate insights saved in the insights/ folder.
+  This will execute the ETL process and generate insights saved in the insights/ folder.
 
 
 ## Sample Outputs
 
 
-### Overall Purchase Rate
-Overall Purchase Rate: 37.60%
+### **Overall Purchase Rate**
+``` bash
+   Overall Purchase Rate: 37.60%
+```
 
 
 ### Purchase Distribution by Age
 ![Purchase by Age](insights/purchase_by_age.png)
+
+
 
 ### Purchase Distribution by Estimated Salary
 ![Purchase by Salary](insights/purchase_by_salary.png)
@@ -77,7 +81,7 @@ Name: Purchased, dtype: float64
 ```
 
 
-### Dataset Source and License
+## Dataset Source and License
 
 The dataset used in this project is sourced from Kaggle:
 [Social Advertisement Dataset on Kaggle](https://www.kaggle.com/datasets/sakshisatre/social-advertisement-dataset/data)
