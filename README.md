@@ -41,3 +41,30 @@ python main.py
 ```
 This will execute the ETL process and generate insights saved in the insights/ folder.
 
+## Sample Outputs
+
+### Overall Purchase Rate
+Overall Purchase Rate: 37.60%
+
+### Purchase Distribution by Age
+![Purchase by Age](insights/purchase_by_age.png)
+
+### Purchase Distribution by Estimated Salary
+![Purchase by Salary](insights/purchase_by_salary.png)
+
+### Purchase Rate by Age Group
+AgeGroup
+18-24    0.000000
+25-34    0.147368
+35-44    0.272000
+45-54    0.815789
+55-64    0.933333
+Name: Purchased, dtype: float64
+
+### Dataset Source and License
+
+The dataset used in this project is sourced from Kaggle:
+[Social Advertisement Dataset on Kaggle](https://www.kaggle.com/datasets/sakshisatre/social-advertisement-dataset/data)
+
+Please refer to Kaggle for license details.
+
