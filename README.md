@@ -19,8 +19,9 @@ The goal is to explore how factors like age and estimated salary influence purch
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/social-media-buying-behavior.git
-cd social-media-buying-behavior
+git clone https://github.com/rashmi-ekanayake/Social-Advertisement-ETL-insights.git
+cd Social-Advertisement-ETL-insights
+
 ```
 
   
