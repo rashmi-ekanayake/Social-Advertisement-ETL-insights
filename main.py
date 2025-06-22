@@ -36,9 +36,28 @@ def main():
         plt.savefig('insights/purchase_by_salary.png')
         plt.close()
 
+         # Additional: Barplot - Purchase Rate by Age Group
+        plt.figure(figsize=(8, 5))
+        agegroup_rates = df.groupby('AgeGroup')['Purchased'].mean().reset_index()
+        sns.barplot(x='AgeGroup', y='Purchased', data=agegroup_rates)
+        plt.title('Purchase Rate by Age Group')
+        plt.ylabel('Purchase Rate')
+        plt.savefig('insights/purchase_rate_by_agegroup.png')
+        plt.close()
+
+        # Additional: Heatmap - Correlation of Features
+        plt.figure(figsize=(6, 4))
+        sns.heatmap(df[['Age', 'EstimatedSalary', 'Purchased']].corr(), annot=True, cmap='coolwarm')
+        plt.title('Feature Correlation Heatmap')
+        plt.savefig('insights/correlation_heatmap.png')
+        plt.close()
+
+
         purchase_by_agegroup = df.groupby('AgeGroup')['Purchased'].mean()
         print("\nPurchase Rate by Age Group:")
         print(purchase_by_agegroup)
+
+        
 
     generate_insights(df_clean)
 
