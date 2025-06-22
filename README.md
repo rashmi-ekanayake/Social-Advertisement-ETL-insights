@@ -52,12 +52,49 @@ python main.py
   This will execute the ETL process and generate insights saved in the insights/ folder.
 
 
+## Features
+✅ Full ETL Pipeline using modular Python code (Extract, Transform, Load)
+
+📊 Visual Analysis of user purchasing behavior by age and salary
+
+🧱 Clean and Modular Codebase using function-based and class-based design
+
+🧪 Unit Tests Added to ensure data extraction works correctly and reliably
+
+📁 Insight Charts auto-generated and saved in the insights/ folder
+
+📦 Easy to run and extend for additional datasets or business use cases
+
+
+## Project Structure
+
+```bash
+Social-Advertisement-ETL-insights/
+├── data/
+│   └── social_ads.csv
+├── insights/
+│   ├── purchase_by_age.png
+│   ├── purchase_by_salary.png
+│   ├── purchase_rate_by_agegroup.png
+│   ├── correlation_heatmap.png
+│   └── cleaned_data.csv
+├── src/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   └── insights.py
+├── test_pipeline.py
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
 ## Sample Outputs
 
 
 ### **Overall Purchase Rate**
 ``` bash
-   Overall Purchase Rate: 37.60%
+Overall Purchase Rate: 37.60%
 ```
 
 
@@ -65,9 +102,17 @@ python main.py
 ![Purchase by Age](insights/purchase_by_age.png)
 
 
-
 ### Purchase Distribution by Estimated Salary
 ![Purchase by Salary](insights/purchase_by_salary.png)
+
+
+### Purchase Rate by Age Group
+![Purchase Rate by Age Group](insights/purchase_rate_by_agegroup.png)
+
+
+### Feature Correlation Heatmap
+![Feature Correlation Heatmap](insights/correlation_heatmap.png)
+
 
 
 ### Purchase Rate by Age Group
